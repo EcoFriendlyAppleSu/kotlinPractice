@@ -1,4 +1,4 @@
-import java.util.Objects
+package intro
 
 /*
 * About Null Safety : If you need a variable that can be null, declare it nullable by adding ? at the end of its type.
@@ -20,7 +20,7 @@ fun main() {
     // inferredNonNull = null return Null can not be a value of a non-null type String. "?" 가 없는 것이 default 인 것을 알 수 있음.
 
     println(strLength(neverNull))
-    // println(strLength(nullableStr)) return Type mismatch: inferred type is Nothing? but String was expected.
+    // println(intro.strLength(nullableStr)) return Type mismatch: inferred type is Nothing? but String was expected.
     // type을 강제합니다.
 }
 

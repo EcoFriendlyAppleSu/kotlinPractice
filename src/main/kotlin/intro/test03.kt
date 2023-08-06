@@ -1,3 +1,5 @@
+package intro
+
 class Customer(val id: Int, var email: String) {
 
 }
@@ -16,7 +18,7 @@ class MutableStack<E>(vararg items: E) {              // 1
 
     fun size() = elements.size
 
-    override fun toString() = "MutableStack(${elements.joinToString()})"
+    override fun toString() = "intro.MutableStack(${elements.joinToString()})"
 }
 
 fun <E> mutableStackOf(vararg element: E) = MutableStack(* element)
