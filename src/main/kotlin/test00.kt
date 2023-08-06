@@ -23,6 +23,11 @@ fun main() {
     operator fun Int.times(str: String) = str.repeat(this)
     println(2 * "Bye ")
 
+    // 아래와 같이 Operator를 사용한다면 String Class의 맴버 함수를 오버로딩해 사용할 수 있습니다.
+    operator fun String.get(range: IntRange) = substring(range)
+    val testStr = "Always forgive your enemies"
+    println(testStr[0 .. 7])
+
 }
 
 class Person(val name: String) {
